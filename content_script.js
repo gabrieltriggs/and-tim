@@ -1,4 +1,3 @@
-console.log("foo");
 walk(document.body);
 
 /** 
@@ -30,6 +29,7 @@ function handleText(textNode) {
     var v = textNode.nodeValue;
 
     v = v.replace(/\bLadies and gentlemen\b/g, "Ladies and gentlemen. . . and Tim");
+    v = v.replace(/\bLadies and Gentlemen\b/g, "Ladies and Gentlemen. . . and Tim");
     v = v.replace(/\bladies and gentlemen\b/g, "ladies and gentlemen. . . and Tim");
 
     textNode.nodeValue = v;
